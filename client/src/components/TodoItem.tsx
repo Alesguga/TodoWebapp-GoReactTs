@@ -72,12 +72,12 @@ const TodoItem = ({ todo }: { todo: Todo }) => {
 				</Text>
 				{todo.completed && (
 					<Badge ml='1' colorScheme='green'>
-						Done
+						Hecho!
 					</Badge>
 				)}
 				{!todo.completed && (
 					<Badge ml='1' colorScheme='yellow'>
-						In Progress
+						En progreso
 					</Badge>
 				)}
 			</Flex>

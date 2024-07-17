@@ -34,7 +34,7 @@ const TodoList = () => {
                 bgGradient='linear(to-l, blue, lightblue)'
                 bgClip='text'
             >
-                Today's Tasks
+                Cosas por hacer
             </Text>
             {isLoading && (
                 <Flex justifyContent={"center"} my={4}>
@@ -44,7 +44,7 @@ const TodoList = () => {
             {!isLoading && todos?.length === 0 && (
                 <Stack alignItems={"center"} gap='3'>
                     <Text fontSize={"xl"} textAlign={"center"} color={"gray.500"}>
-                        All tasks completed! 🤞
+                        Todo hecho! 🤞
                     </Text>
                     <img src='/go.png' alt='Go logo' width={70} height={70} />
                 </Stack>
