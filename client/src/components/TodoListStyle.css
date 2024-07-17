@@ -1,0 +1,6 @@
+/* Añadir este CSS en tu archivo CSS */
+.todo-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
