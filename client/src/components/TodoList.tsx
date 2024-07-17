@@ -1,4 +1,4 @@
-import { Flex, Spinner, Stack, Text } from "@chakra-ui/react";
+import { Flex, Spinner, Stack, Text, SimpleGrid } from "@chakra-ui/react";
 import TodoItem from "./TodoItem";
 import { useQuery } from "@tanstack/react-query";
 import { BASE_URL } from "../App";
@@ -48,11 +48,11 @@ const TodoList = () => {
                     <img src='/go.png' alt='Go logo' width={70} height={70} />
                 </Stack>
             )}
-            <Stack gap={3}>
+            <SimpleGrid columns={[1, null, 2]} spacing={3}>
                 {todos?.map((todo) => (
                     <TodoItem key={todo._id} todo={todo} />
                 ))}
-            </Stack>
+            </SimpleGrid>
         </>
     );
 };
